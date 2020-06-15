@@ -26,3 +26,15 @@ if (età < 18) {
 
 // Risultato tariffa
 document.getElementById("tariffa").innerHTML = "€ " +  Math.ceil(tariffa);
+
+// Condizioni promo Young & Senior
+if (età < 18) {
+  promo = "Promo Young! Sconto del 20% agli under 18!"
+} else if (età > 65) {
+  promo = "Promo Senior! Sconto del 40% agli over 65!"
+} else {
+  promo = "La tariffa del giorno!"
+}
+
+// Display promo
+document.getElementById("promo").innerHTML = promo
